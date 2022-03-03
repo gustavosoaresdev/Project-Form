@@ -21,7 +21,8 @@ body{
     content: 'DEVs';
     border-bottom: 3px solid #6a3093;
 }
-#cadastro-title p{font-size: 20px;} /* Título */
+#cadastro-title p{font-size: 20px;}
+/* Título */
 
 .formBox{
     background: #6a3093;
@@ -54,15 +55,15 @@ body{
     justify-content: space-between;
 }   /* Caixa das inputs */
 
-.inputBox input, label{display: block;}
 .inputBox label{
+    display: block;
     font-weight: 500;
     color: #fff;
     text-shadow: 1px 1px 3px #000;
 }
 .inputBox input{
     width: 300px;
-    margin: 3px 0 15px 0;
+    margin: 3px 0 10px 0;
     padding: 10px;
     border-radius: 3px;
     border: 1px solid #ccc;
@@ -75,7 +76,31 @@ body{
 }   /* Caixa pai de flexBox */
 
 .flexBox{
-    width: 250px;
+    width: 270px;
     display: flex;
     justify-content: space-between;
-}   /* Caixa pai das labels e inputs do type radio */
+}
+.flexBox label{margin-top: 20px;}
+/* Caixa pai das labels e inputs do type radio */
+
+.senioridadeBox{margin-bottom: 20px;}
+.senioridadeBox label{color: #fff; text-shadow: 1px 1px 3px #000;}
+/* Caixa do select senioridade */
+
+#select-senioridade option{font-size: 16px;}
+#select-senioridade{
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: 100px;
+    border-radius: 20px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-image: url(./Images/caret-down-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}   /* Modificação na tag <select> e <option> */

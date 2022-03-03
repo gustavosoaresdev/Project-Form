@@ -23,22 +23,22 @@
         <div class="inputBox">
           <div>
             <label for="input-nome">Nome completo</label>
-            <input type="text" name="nome" id="input-nome" />
+            <input type="text" name="nome" id="input-nome" required/>
           </div>
 
           <div>
             <label for="input-email">E-mail</label>
-            <input type="email" name="email" id="input-email" />
+            <input type="email" name="email" id="input-email" required/>
           </div>
 
           <div>
             <label for="input-senha">Senha</label>
-            <input type="password" name="senha" id="input-senha" />
+            <input type="password" name="senha" id="input-senha" required/>
           </div>
 
           <div>
             <label for="input-confirmar-senha">Confirmar senha</label>
-            <input type="password" name="confirmar-senha" id="input-confirmar-senha" />
+            <input type="password" name="confirmar-senha" id="input-confirmar-senha" required/>
           </div>
         </div><!--Daqui pra cima estão prontos-->
 
@@ -73,29 +73,31 @@
         <div class="linguagensBox">
           <label><b>Quais Linguagens você usa?</b></label>
           <br>
+          <div class="space">
           <label for="input-html">
-            <input type="checkbox" name="html" value="html" id="input-html">HTML
+            <input type="checkbox" name="html" value="html" id="input-html"> HTML
           </label>
 
           <label for="input-css">
-            <input type="checkbox" name="css" value="css" id="input-css">CSS
+            <input type="checkbox" name="css" value="css" id="input-css"> CSS
           </label>
 
           <label for="input-js">
-            <input type="checkbox" name="js" value="js" id="input-js">JavaScript
+            <input type="checkbox" name="js" value="js" id="input-js"> JavaScript
           </label>
 
           <label for="input-mySql">
-            <input type="checkbox" name="mySql" value="mySql" id="input-mySql">MySQL
+            <input type="checkbox" name="mySql" value="mySql" id="input-mySql"> MySQL
           </label>
 
           <label for="input-php">
-            <input type="checkbox" name="php" value="php" id="input-php">PHP
+            <input type="checkbox" name="php" value="php" id="input-php"> PHP
           </label>
 
           <label for="input-python">
-            <input type="checkbox" name="python" value="python" id="input-python">Python
+            <input type="checkbox" name="python" value="python" id="input-python"> Python
           </label>
+          </div>
         </div>
 
         <button type="submit" id="btn-concluido">Concluido</button>

@@ -104,3 +104,34 @@ body{
     background-position-x: calc(100% - 10px);
     background-position-y: center;
 }   /* Modificação na tag <select> e <option> */
+
+.linguagensBox{margin-bottom: 20px;}
+/* Caixa principal */
+.linguagensBox label{
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}
+/* Labels da caixa linguagensBox */
+
+.space{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#btn-concluido{
+    width: 180px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #5f1792;
+    border: 1px solid #fff;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Button do type submit */
+/* Finalização do Projeto */

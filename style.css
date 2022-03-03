@@ -67,3 +67,15 @@ body{
     border-radius: 3px;
     border: 1px solid #ccc;
 }   /* Modificação individual */
+
+.genreBox{
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}   /* Caixa pai de flexBox */
+
+.flexBox{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}   /* Caixa pai das labels e inputs do type radio */

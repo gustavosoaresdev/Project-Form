@@ -15,3 +15,11 @@ body{
 }
 
 #cadastro-title{text-align: center; margin: 20px 0;}    /* Título */
+
+.formBox{
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to right, #a044ff, #6a3093);
+    padding: 20px;
+    border-radius: 5px;
+}

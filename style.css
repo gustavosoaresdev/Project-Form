@@ -4,6 +4,7 @@
     font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
     text-decoration: none;
+    outline: none;
 }
 
 body{
@@ -14,18 +15,19 @@ body{
     align-items: center;
 }
 
-#cadastro-title{text-align: center; margin: 20px 0;}    /* Título */
+#cadastro-title{text-align: center; margin: 20px 0;}
 #cadastro-title h1{font-size: 34px; margin-bottom: 5px;}
 #cadastro-title h1::after{
     content: 'DEVs';
     border-bottom: 3px solid #6a3093;
 }
-#cadastro-title p{font-size: 20px;}
+#cadastro-title p{font-size: 20px;} /* Título */
 
 .formBox{
     background: #6a3093;
     background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
     background: linear-gradient(to right, #a044ff, #6a3093);
+    width: 700px;
     padding: 20px;
     border-radius: 5px;
 }   /* Caixa do form */
@@ -43,3 +45,25 @@ body{
     color: #fff;
     text-shadow: 1px 1px 3px #000;
 }   /* Legenda do fieldset */
+
+.inputBox{
+    width: 100%;
+    margin: auto 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}   /* Caixa das inputs */
+
+.inputBox input, label{display: block;}
+.inputBox label{
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}
+.inputBox input{
+    width: 300px;
+    margin: 3px 0 15px 0;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}   /* Modificação individual */

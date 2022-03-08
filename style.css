@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastro-title{text-align: center; margin: 20px 0;}
+#cadastro-title h1{font-size: 34px; margin-bottom: 5px;}
+#cadastro-title h1::after{
+    content: 'DEVs';
+    border-bottom: 3px solid #6a3093;
+}
+#cadastro-title p{font-size: 20px;}
+/* Título */
+
+.formBox{
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to right, #a044ff, #6a3093);
+    width: 700px;
+    padding: 20px;
+    border-radius: 5px;
+}   /* Caixa do form */
+
+.fieldBox{
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}   /* Caixa do fieldset */
+
+.fieldBox legend{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}   /* Legenda do fieldset */
+
+.inputBox{
+    width: 100%;
+    margin: auto 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}   /* Caixa das inputs */
+
+.inputBox label{
+    display: block;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}
+.inputBox input{
+    width: 300px;
+    margin: 3px 0 10px 0;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}   /* Modificação individual */
+
+.genreBox{
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}   /* Caixa pai de flexBox */
+
+.flexBox{
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+.flexBox label{margin-top: 20px;}
+/* Caixa pai das labels e inputs do type radio */
+
+.senioridadeBox{margin-bottom: 20px;}
+.senioridadeBox label{color: #fff; text-shadow: 1px 1px 3px #000;}
+/* Caixa do select senioridade */
+
+#select-senioridade option{font-size: 16px;}
+#select-senioridade{
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: 100px;
+    border-radius: 20px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-image: url(./Images/caret-down-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}   /* Modificação na tag <select> e <option> */
+
+.linguagensBox{margin-bottom: 20px;}
+/* Caixa principal */
+.linguagensBox label{
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}
+/* Labels da caixa linguagensBox */
+
+.space{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#btn-concluido{
+    width: 180px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #5f1792;
+    border: 1px solid #fff;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Button do type submit */
+/* Finalização do Projeto */

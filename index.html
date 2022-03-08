@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="cadastro-title">
+      <h1>Cadastro de </h1>
+      <p>Complete suas Informações</p>
+    </div>
+
+    <form action="" method="get" class="formBox">
+      <fieldset class="fieldBox">
+        <legend>Formulário</legend>
+
+        <div class="inputBox">
+          <div>
+            <label for="input-nome">Nome completo</label>
+            <input type="text" name="nome" id="input-nome" required/>
+          </div>
+
+          <div>
+            <label for="input-email">E-mail</label>
+            <input type="email" name="email" id="input-email" required/>
+          </div>
+
+          <div>
+            <label for="input-senha">Senha</label>
+            <input type="password" name="senha" id="input-senha" required/>
+          </div>
+
+          <div>
+            <label for="input-confirmar-senha">Confirmar senha</label>
+            <input type="password" name="confirmar-senha" id="input-confirmar-senha" required/>
+          </div>
+        </div><!--Daqui pra cima estão prontos-->
+
+        <div class="genreBox">
+          <label><b>Selecione seu Gênero</b></label>
+          <br>
+          <div class="flexBox">
+            <label for="input-genero-masculino">
+              <input type="radio" name="genero" value="masculino" id="input-genero-masculino"> Masculino
+            </label>
+
+            <label for="input-genero-feminino">
+              <input type="radio" name="genero" value="feminino" id="input-genero-feminino"> Feminino
+            </label>
+
+            <label for="input-genero-outro">
+              <input type="radio" name="genero" value="outro" id="input-genero-outro"> Outro
+            </label>
+          </div>
+        </div>
+
+        <div class="senioridadeBox">
+          <label for="select-senioridade"><b>Senioridade</b></label>
+          <select name="senioridade" id="select-senioridade">
+            <option disabled selected>Selecione</option>
+            <option value="junior">Junior</option>
+            <option value="pleno">Pleno</option>
+            <option value="senior">Sênior</option>
+          </select>
+        </div>
+
+        <div class="linguagensBox">
+          <label><b>Quais Linguagens você usa?</b></label>
+          <br>
+          <div class="space">
+          <label for="input-html">
+            <input type="checkbox" name="html" value="html" id="input-html"> HTML
+          </label>
+
+          <label for="input-css">
+            <input type="checkbox" name="css" value="css" id="input-css"> CSS
+          </label>
+
+          <label for="input-js">
+            <input type="checkbox" name="js" value="js" id="input-js"> JavaScript
+          </label>
+
+          <label for="input-mySql">
+            <input type="checkbox" name="mySql" value="mySql" id="input-mySql"> MySQL
+          </label>
+
+          <label for="input-php">
+            <input type="checkbox" name="php" value="php" id="input-php"> PHP
+          </label>
+
+          <label for="input-python">
+            <input type="checkbox" name="python" value="python" id="input-python"> Python
+          </label>
+          </div>
+        </div>
+
+        <button type="submit" id="btn-concluido">Concluido</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
